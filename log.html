@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title></title>
+    <style>
+        body {
+            background-image: url('dolebuilding.jpg');
+              background-repeat: no-repeat;
+            background-size: cover;
+          
+
+        }
+
+        .Lofo {
+            background-image: url('backg.jpg');
+            box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+            background-color: lightgray;
+            opacity: 0.9;
+            position: absolute;
+            font-size: 20px;
+            border: 5px solid red;
+            width: 600px;
+            padding: 20px;
+            font-weight: bold;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .Lofo input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            font-size: 26px;
+        }
+
+        .Lofo button[type="submit"] {
+            width: 100%;
+            height: 40px;
+            background-color: #C23D37;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            margin-top: 3%;
+        }
+
+        .Lofo button[type="submit"]:hover {
+            background-color: #913D3A; 
+        }
+        input{
+            text-align: center;
+        } 
+        .back{
+    margin-bottom: 2%;
+   text-align: justify;
+   padding-left: 47%;
+
+}
+
+.back button{
+background-color: #C23D37;
+margin-left: 2%;
+margin-top: 2%;
+
+}
+
+.back button:hover{
+    background-color: #913D3A;
+}
+
+
+        
+    </style>
+</head>
+<body>
+	 <header>
+        <!-- Insert your header picture using the <img> tag -->
+        <center><img src="Header.jpg" alt="Header Picture" width="900" height="300"></center>
+    </header>
+<div>
+
+    <div class="back">
+             <button onclick="goBack()" style="font-size:25px;"><i class="fa fa-arrow-alt-circle-left"></i> Back </button>
+           
+       </div> 
+            
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+</div>
+    <form id="loginForm" class="Lofo">
+        <input type="password" size="30" id="pin" placeholder="Enter PIN" style="height: 50px;">
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Retrieve entered PIN
+        const enteredPin = document.getElementById('pin').value;
+
+        // Perform authentication (check if entered PIN matches admin PIN)
+        if (enteredPin === 'DOLEXCDOFO') { // Replace 'adminPIN' with the actual admin PIN
+            // If authentication succeeds, insert the PIN into the database
+            alert("Thank You!"); window.location.replace("form.html");
+        } else {
+            // If authentication fails, display an error message
+            alert('Invalid PIN');
+        }
+    });
+</script>
+</body>
+</html>

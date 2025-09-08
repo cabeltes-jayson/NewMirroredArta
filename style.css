@@ -1,0 +1,373 @@
+/*style.css */
+@import url( 
+'https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+  
+body { 
+    margin: 0;   
+    padding: 0;
+    align-items:
+    justify-content: space-around; 
+    flex-direction: column; 
+    height: 100vh;
+    background-image: url('dolebuilding.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif; 
+  
+} .hbg{
+    text-align: center;
+
+}
+.select option {
+
+}
+.date{
+    text-align: right;
+
+}
+.textup { 
+    background-color: #fff; 
+    width: ;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8); 
+    padding: 15px; 
+    border-radius: 8px;
+    margin-right: 3px; 
+
+} 
+/* Styles for the modal */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Button */
+  .next-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .next-button:hover {
+    background-color: #0056b3;
+  }
+  .p{
+    text-align: justify;
+    font-size: 20px;
+  }
+.back{
+    margin-bottom: 2%;
+   text-align: justify;
+
+}
+
+.back button{
+background-color: #C23D37;
+margin-left: 2%;
+margin-top: 2%;
+
+}
+
+.back button:hover{
+    background-color: #913D3A;
+}
+.box{
+/*   position: absolute;*/
+   left: 65%;
+   top: 50%;
+   font-size: 18px;
+   margin-right: 4%;
+    color: red;
+    float: right;
+}
+.form-group p{
+        font-size: 15px;
+        color: darkblue;
+        text-align: center;
+        font-weight: bold;
+        height: 1px;
+        margin-top: -10px;
+}
+.form-group label{
+    text-align: center;
+    position: absolute;
+    left: 880px;
+    top: 720px;
+}
+.form-group label1{
+    text-align: center;
+    position: absolute;
+    left: 1180px;
+    top: 720px;
+}
+.dropdown{
+     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8); 
+    padding: 15px;
+    justify-content: center;
+    border-radius: 8px;
+     font-size: 20px;
+}
+.form-group1{
+    background-image: url("ARTA-TRANSPARENT.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.cont{
+    background-color: lightgray; 
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8); 
+    padding: 15px;
+    justify-content: center;
+    border-radius: 8px;
+
+     font-size: 14px;
+    
+}
+
+
+  
+.container {
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8); 
+    padding: 15px;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: justify-all;
+    max-width: 900px;
+    margin: 5px auto;
+    background-color: lightgray;
+    opacity: 0.9;
+
+    }
+    .form-group input[type="text"],
+    .form-group input[type=""],
+    .form-group textarea {
+    width: 100%;
+    max-width: 100%; /* Added */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Added */
+}
+    
+    .form-group {
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8); 
+    padding: 15px;
+    justify-content: center;
+    border-radius: 8px;
+     font-size: 20px;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    
+    .form-group textarea {
+       
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        height: 80px;
+        width:  500px;
+        display: block;
+
+        
+    }
+    .form-group input[type="email"]{
+        text-align: center;
+        height: 30px;
+        width:  300px;
+        display: block;
+        margin-left: auto; /* Centers the input horizontally */
+        margin-right: auto; /* Centers the input horizontally */
+    }
+    
+    .form-group input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    
+    @media (max-width: 900px) {
+        .container {
+            width: 150%;
+        }
+        .dropdown{
+            width: 960%;
+        }
+        .hbg{
+            width: 20%;
+        }
+        .cont{
+            width:96%;
+        }
+    }
+    .dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Dropdown container (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #2980b9;
+}
+@media screen and (max-width: 600px) {
+  .dropdown-content {
+    position: relative;
+    display: none;
+  }
+
+  .dropdown-content a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+.form-group h5 {
+
+font-style: italic;
+margin-left: 190px;
+margin-bottom: 10px;
+}
+
+.form {
+
+    margin-bottom: 10px;
+
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8); 
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+     font-size: 20px;
+}
+
+.form h2{
+margin-top: -5px;
+}
+
+.dropdown{
+
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 1px;
+    margin-bottom: 5px;
+}
+#controlNumber {
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 320px;
+    text-align: center;
+    user-select: none;
+    margin-bottom: 10px;
+  }
+  #dateInput {
+    margin-bottom: 10px;
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .myButton {
+            background-color: #007bff; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+        .myButton:hover {
+            background-color: red; 
+        }
+
