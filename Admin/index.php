@@ -177,7 +177,7 @@
                 <span class="info-box-icon bg-blue elevation-1"><i class="fas fa-female"></i></span>
                 <div class="info-box-content">
                   <span class="info-box-text">Total Female Clients</span>
-                  <span class="info-box-number"><?php echo $total_male; ?></span>
+                  <span class="info-box-number"><?php echo $total_female; ?></span>
                 </div>
               </div>
             </a>

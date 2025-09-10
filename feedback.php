@@ -52,7 +52,7 @@ $ctrl_num = $_POST['ctrl_num'];
 
     
     // Check if controlNumber already exists
-    $sql_verify = "SELECT COUNT(*) AS count FROM offline WHERE controlNumber = ?";
+    $sql_verify = "SELECT COUNT(*) AS count FROM poll WHERE controlNumber = ?";
     $stmt = $conn->prepare($sql_verify);
     $stmt->bind_param("s", $controlNum);
     $stmt->execute();
@@ -70,7 +70,7 @@ $ctrl_num = $_POST['ctrl_num'];
                         confirmButtonText: "OK"
                     }).then((result) => {
                             if (result.isConfirmed) {
-                                window.location.replace("walkin.php"); 
+                                window.location.replace("online.php"); 
                             }
                         });
                 </script>';
@@ -103,7 +103,7 @@ $ctrl_num = $_POST['ctrl_num'];
                 confirmButtonText: "Try Again"
             }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.replace("walkin.php"); 
+                    window.location.replace("online.php"); 
                 }
             });
         </script>';
@@ -122,7 +122,7 @@ $ctrl_num = $_POST['ctrl_num'];
             confirmButtonText: "OK"
         }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.replace("walkin.php"); 
+                    window.location.replace("online.php"); 
                 }
             });
     </script>';
